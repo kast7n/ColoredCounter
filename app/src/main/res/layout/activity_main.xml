@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnPurple"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#520BC5"
+        android:text="PURPLE"
+        android:textSize="13sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGreen"
+        app:layout_constraintTop_toBottomOf="@+id/tvCounter" />
+
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#17C50B"
+        android:text="GREEN"
+        android:textSize="14sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnClick"
+        app:layout_constraintEnd_toStartOf="@+id/btnPurple"
+        app:layout_constraintStart_toEndOf="@+id/btnRed"
+        app:layout_constraintTop_toBottomOf="@+id/tvCounter" />
+
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#C50B11"
+        android:text="RED"
+        android:textSize="14sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnClick"
+        app:layout_constraintEnd_toStartOf="@+id/btnGreen"
+        app:layout_constraintStart_toEndOf="@+id/btnBlue"
+        app:layout_constraintTop_toBottomOf="@+id/tvCounter" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="405dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#CDDC39"
+        android:text="Click!"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:background="#AFABAB"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPurple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#0B50C5"
+        android:text="BLUE"
+        android:textSize="14sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCounter" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="3dp"
+        android:background="#CDDC39"
+        android:gravity="center"
+        android:text="HelloSharedPrefs"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCounter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
